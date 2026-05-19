@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ПЕТУХЪ — Первый Голос Земли</title>
+  <meta name="description" content="Сайт о петухах и петушочках. Породы, анатомия, тест «какой ты петух», кукарекомер и зал славы." />
+  <meta name="theme-color" content="#0E0805" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800;900&family=Marck+Script&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐓%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ░░░░░░░░░░ INTRO CURTAIN ░░░░░░░░░░ -->
+<div class="curtain" id="curtain" aria-hidden="true">
+  <div class="curtain__sun"></div>
+  <div class="curtain__text">КУКА&shy;РЕ&shy;КУ</div>
+</div>
+
+<!-- ░░░░░░░░░░ NAV ░░░░░░░░░░ -->
+<header class="nav">
+  <a class="nav__brand" href="#top">
+    <span class="nav__brand-mark">🐓</span>
+    <span class="nav__brand-text">Петухъ<span>.ру</span></span>
+  </a>
+  <nav class="nav__menu" aria-label="Главное меню">
+    <a href="#manifesto">Манифест</a>
+    <a href="#anatomy">Анатомия</a>
+    <a href="#breeds">Породы</a>
+    <a href="#facts">Факты</a>
+    <a href="#meter">Кукарекомер</a>
+    <a href="#quiz">Тест</a>
+    <a href="#pantheon">Зал славы</a>
+  </nav>
+  <button class="nav__crow" id="navCrow" type="button" aria-label="Кукарекнуть">КУКАРЕКУ!</button>
+</header>
+
+<!-- ░░░░░░░░░░ HERO ░░░░░░░░░░ -->
+<section id="top" class="hero">
+  <div class="hero__rays" aria-hidden="true"></div>
+  <div class="hero__grain" aria-hidden="true"></div>
+
+  <div class="hero__copy">
+    <p class="hero__eyebrow">Год петуха · 4715 лет на службе у рассвета</p>
+    <h1 class="hero__title">
+      <span class="hero__title-line">ПЕТУХЪ&nbsp;—</span>
+      <span class="hero__title-line hero__title-line--accent">первый</span>
+      <span class="hero__title-line">голосъ земли</span>
+    </h1>
+    <p class="hero__lede">
+      Восемь пород, одна анатомия, бесконечный кукарек. Сайт о тех, кто будит
+      солнце пинком в небо.
+    </p>
+    <div class="hero__cta">
+      <button class="btn btn--giant" id="heroCrow" type="button">
+        <span class="btn__label">КУКАРЕКНУТЬ</span>
+        <span class="btn__sub">нажми и не жалей</span>
+      </button>
+      <a class="btn btn--ghost" href="#manifesto">Манифест ↓</a>
+    </div>
+  </div>
+
+  <figure class="hero__portrait">
+    <img src="images/hero-rooster.png" alt="Портрет петуха на фоне рассвета" />
+    <figcaption>Петухъ обыкновенный, царствующий</figcaption>
+  </figure>
+
+  <div class="hero__marquee" aria-hidden="true">
+    <div class="hero__marquee-track">
+      <span>КУКАРЕКУ · KOO-KA-RYE-KOO · COCK-A-DOODLE-DOO · KIKERIKI · KOKEKOKKO · QUIQUIRIQUÍ · CHICCHIRICHÌ · KUKKUKUUKKO · UH-UH-UH-UH · </span>
+      <span>КУКАРЕКУ · KOO-KA-RYE-KOO · COCK-A-DOODLE-DOO · KIKERIKI · KOKEKOKKO · QUIQUIRIQUÍ · CHICCHIRICHÌ · KUKKUKUUKKO · UH-UH-UH-UH · </span>
+    </div>
+  </div>
+</section>
+
+<!-- ░░░░░░░░░░ MANIFESTO ░░░░░░░░░░ -->
+<section id="manifesto" class="manifesto">
+  <div class="manifesto__inner">
+    <p class="section__eyebrow">§ 01 · Манифест</p>
+    <h2 class="manifesto__title">
+      Без петуха <em>солнце</em> не встанет.
+    </h2>
+    <div class="manifesto__grid">
+      <p>
+        Тысячи лет до будильника у человечества был один интерфейс пробуждения —
+        кочет на заборе. Не вежливое «доброе утро», а боевое «ПОДЪЁМ».
+      </p>
+      <p>
+        Петух — это не курица с короной. Это <strong>оратор, монарх и метроном</strong>
+        фермерского космоса. Он не поёт — он <strong>командует временем</strong>.
+      </p>
+      <p>
+        Этот сайт — присяга в верности кочету. Здесь нет KPI, здесь есть гребень,
+        бородка, шпоры и шесть утра.
+      </p>
+    </div>
+    <div class="manifesto__sig">
+      — кочеточная коллегия<br><span>май, рассвет, 04:47 МСК</span>
+    </div>
+  </div>
+</section>
+
+<!-- ░░░░░░░░░░ ANATOMY ░░░░░░░░░░ -->
+<section id="anatomy" class="anatomy">
+  <div class="anatomy__head">
+    <p class="section__eyebrow">§ 02 · Анатомия</p>
+    <h2 class="section__title">Из чего сделан кочет</h2>
+    <p class="section__lede">
+      Тычь курсором в подписи. Каждая часть — не просто пёрышко, а инструмент
+      доминирования над двором.
+    </p>
+  </div>
+
+  <div class="anatomy__stage">
+    <svg class="anatomy__svg" viewBox="0 0 800 600" role="img" aria-label="Схема анатомии петуха">
+      <!-- Stylised silhouette of a rooster -->
+      <defs>
+        <linearGradient id="featherGrad" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0%" stop-color="#5A2A12"/>
+          <stop offset="55%" stop-color="#C8102E"/>
+          <stop offset="100%" stop-color="#D4AF37"/>
+        </linearGradient>
+        <linearGradient id="tailGrad" x1="0" x2="0" y1="1" y2="0">
+          <stop offset="0%" stop-color="#0F3D3E"/>
+          <stop offset="60%" stop-color="#1E5F5F"/>
+          <stop offset="100%" stop-color="#D4AF37"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Tail -->
+      <path d="M120,300 C 80,240 70,160 130,140 C 200,120 220,200 200,280 C 290,200 320,260 270,360 C 220,440 150,400 120,300 Z" fill="url(#tailGrad)"/>
+      <!-- Body -->
+      <path d="M250,380 C 220,300 260,220 360,210 C 470,200 540,260 540,360 C 540,440 470,490 380,490 C 300,490 280,440 250,380 Z" fill="url(#featherGrad)"/>
+      <!-- Hackle (cape) -->
+      <path d="M460,250 C 500,180 580,170 620,210 C 600,260 560,300 510,310 Z" fill="#D4AF37" opacity=".95"/>
+      <!-- Head -->
+      <circle cx="600" cy="220" r="60" fill="#7A1E14"/>
+      <!-- Beak -->
+      <path d="M650,210 L 700,205 L 655,225 Z" fill="#F2C744"/>
+      <!-- Eye -->
+      <circle cx="615" cy="210" r="6" fill="#1a0a02"/>
+      <circle cx="617" cy="208" r="2" fill="#FFE5B4"/>
+      <!-- Comb -->
+      <path d="M560,170 Q 575,140 585,165 Q 600,135 615,165 Q 630,135 645,170 L 645,190 Q 600,205 560,190 Z" fill="#C8102E"/>
+      <!-- Wattles -->
+      <path d="M615,255 Q 605,290 625,300 Q 645,290 635,255 Z" fill="#C8102E"/>
+      <!-- Legs -->
+      <path d="M380,490 L 365,580 M 460,490 L 475,580" stroke="#F2C744" stroke-width="14" stroke-linecap="round" fill="none"/>
+      <!-- Spurs -->
+      <path d="M362,560 L 340,565" stroke="#1a0a02" stroke-width="6" stroke-linecap="round"/>
+      <path d="M477,560 L 499,565" stroke="#1a0a02" stroke-width="6" stroke-linecap="round"/>
+      <!-- Feet -->
+      <path d="M350,585 L 370,580 L 365,580 L 380,590 M 460,585 L 480,580 L 475,580 L 490,590" stroke="#F2C744" stroke-width="8" stroke-linecap="round" fill="none"/>
+    </svg>
+
+    <button class="anatomy__pin" style="--x:73%;--y:24%" data-pin="comb" aria-label="Гребень">
+      <span class="anatomy__pin-dot"></span><span class="anatomy__pin-label">Гребень</span>
+    </button>
+    <button class="anatomy__pin" style="--x:80%;--y:48%" data-pin="wattle" aria-label="Серёжки">
+      <span class="anatomy__pin-dot"></span><span class="anatomy__pin-label">Серёжки</span>
+    </button>
+    <button class="anatomy__pin" style="--x:88%;--y:36%" data-pin="beak" aria-label="Клюв">
+      <span class="anatomy__pin-dot"></span><span class="anatomy__pin-label">Клюв</span>
+    </button>
+    <button class="anatomy__pin" style="--x:74%;--y:43%" data-pin="hackle" aria-label="Грива (хэкл)">
+      <span class="anatomy__pin-dot"></span><span class="anatomy__pin-label">Грива</span>
+    </button>
+    <button class="anatomy__pin" style="--x:25%;--y:35%" data-pin="sickle" aria-label="Косицы хвоста">
+      <span class="anatomy__pin-dot"></span><span class="anatomy__pin-label">Косицы</span>
+    </button>
+    <button class="anatomy__pin" style="--x:48%;--y:60%" data-pin="saddle" aria-label="Поясница">
+      <span class="anatomy__pin-dot"></span><span class="anatomy__pin-label">Поясница</span>
+    </button>
+    <button class="anatomy__pin" style="--x:43%;--y:94%" data-pin="spur" aria-label="Шпоры">
+      <span class="anatomy__pin-dot"></span><span class="anatomy__pin-label">Шпоры</span>
+    </button>
+    <button class="anatomy__pin" style="--x:60%;--y:94%" data-pin="foot" aria-label="Плюсна">
+      <span class="anatomy__pin-dot"></span><span class="anatomy__pin-label">Плюсна</span>
+    </button>
+
+    <div class="anatomy__info" id="anatomyInfo" aria-live="polite">
+      <h3 class="anatomy__info-title">Выбери часть петуха</h3>
+      <p class="anatomy__info-text">
+        Каждая деталь — отдельный пресс-релиз. Гребень — статус, шпоры — устав,
+        косицы — мода. Тычь в точку, чтобы узнать.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ░░░░░░░░░░ BREEDS ░░░░░░░░░░ -->
+<section id="breeds" class="breeds">
+  <div class="breeds__head">
+    <p class="section__eyebrow">§ 03 · Породы</p>
+    <h2 class="section__title">Восемь кочетов разной школы</h2>
+    <p class="section__lede">
+      От русского Орловского с бакенбардами до итальянского Леггорна, который
+      сделал из яиц промышленность. Каждый — со своим характером.
+    </p>
+  </div>
+  <div class="breeds__grid" id="breedsGrid"><!-- JS injects --></div>
+</section>
+
+<!-- ░░░░░░░░░░ FACTS ░░░░░░░░░░ -->
+<section id="facts" class="facts">
+  <div class="facts__head">
+    <p class="section__eyebrow">§ 04 · Факты</p>
+    <h2 class="section__title">Восемь вещей, которых вы не знали о петухе</h2>
+  </div>
+  <div class="facts__grid">
+    <article class="fact">
+      <div class="fact__num">01</div>
+      <h3>Циркадный гангстер</h3>
+      <p>Петухи кукарекают по внутренним часам, а не от света. Учёные из Нагои выключили день — петухи всё равно орали в 4 утра.</p>
+    </article>
+    <article class="fact">
+      <div class="fact__num">02</div>
+      <h3>130 децибел</h3>
+      <p>Крик кочета громче бензопилы. Чтобы не оглохнуть, у петуха при открытии клюва автоматически перекрывается слуховой канал.</p>
+    </article>
+    <article class="fact">
+      <div class="fact__num">03</div>
+      <h3>УФ-зрение</h3>
+      <p>Петухи видят ультрафиолет. Для них куры выглядят светящимися — гребень светит как неоновая вывеска «Open».</p>
+    </article>
+    <article class="fact">
+      <div class="fact__num">04</div>
+      <h3>Иерархия по гребню</h3>
+      <p>Размер и яркость гребня — это публичный статус. Петух с тусклым гребнем не имеет права петь раньше альфы. Серьёзно.</p>
+    </article>
+    <article class="fact">
+      <div class="fact__num">05</div>
+      <h3>30+ сигналов</h3>
+      <p>У петуха более 30 различных голосовых сигналов: «еда», «хищник в небе», «хищник по земле», «куры, я тут красив» — отдельные звуки.</p>
+    </article>
+    <article class="fact">
+      <div class="fact__num">06</div>
+      <h3>Tandoori-предок</h3>
+      <p>Все домашние куры — потомки красной джунглевой курицы Юго-Восточной Азии. Одомашнили её ~8 000 лет назад. Дольше, чем кошку.</p>
+    </article>
+    <article class="fact">
+      <div class="fact__num">07</div>
+      <h3>Геральдика</h3>
+      <p>Петух — национальный символ Франции, Португалии и Кении. В России — символ зари, оберег от пожара и хранитель курятника.</p>
+    </article>
+    <article class="fact">
+      <div class="fact__num">08</div>
+      <h3>Тестостерон-машина</h3>
+      <p>Молодой петух начинает кукарекать в 4–5 месяцев. Это маркер половой зрелости — у людей это называется «пубертат», у петухов — «карьера».</p>
+    </article>
+  </div>
+</section>
+
+<!-- ░░░░░░░░░░ METER ░░░░░░░░░░ -->
+<section id="meter" class="meter">
+  <div class="meter__head">
+    <p class="section__eyebrow">§ 05 · Кукарекомер</p>
+    <h2 class="section__title">Общая мощность кукарека</h2>
+    <p class="section__lede">
+      Каждый клик = один кукарек. Кукареки сохраняются в твоём браузере и
+      суммируются в глобальный счётчик сессии. Поставь рекорд.
+    </p>
+  </div>
+
+  <div class="meter__panel">
+    <div class="meter__display">
+      <div class="meter__label">Личный рекорд</div>
+      <div class="meter__count" id="meterCount">0</div>
+      <div class="meter__sub">
+        <span>лучшая серия в секунду: <b id="meterRate">0</b></span>
+        <span>·</span>
+        <span>уровень: <b id="meterTier">Цыплёнок</b></span>
+      </div>
+    </div>
+    <button class="meter__button" id="meterButton" type="button" aria-label="Кукарекнуть">
+      <span class="meter__button-icon">🐓</span>
+      <span class="meter__button-text">КУКАРЕКНУТЬ</span>
+    </button>
+    <div class="meter__bar" aria-hidden="true">
+      <div class="meter__bar-fill" id="meterBar"></div>
+    </div>
+    <ol class="meter__tiers" aria-hidden="true">
+      <li>1 — Цыплёнок</li>
+      <li>10 — Подросток</li>
+      <li>50 — Кочет</li>
+      <li>200 — Хозяин двора</li>
+      <li>1000 — Бог рассвета</li>
+    </ol>
+    <button class="meter__reset" id="meterReset" type="button">Сбросить рекорд</button>
+  </div>
+</section>
+
+<!-- ░░░░░░░░░░ QUIZ ░░░░░░░░░░ -->
+<section id="quiz" class="quiz">
+  <div class="quiz__head">
+    <p class="section__eyebrow">§ 06 · Тест</p>
+    <h2 class="section__title">Какой ты петух?</h2>
+    <p class="section__lede">5 вопросов. В конце узнаешь свою породу и насколько ты опасен для двора.</p>
+  </div>
+  <div class="quiz__stage" id="quizStage"><!-- JS --></div>
+</section>
+
+<!-- ░░░░░░░░░░ PANTHEON ░░░░░░░░░░ -->
+<section id="pantheon" class="pantheon">
+  <div class="pantheon__head">
+    <p class="section__eyebrow">§ 07 · Зал славы</p>
+    <h2 class="section__title">Великие петухи человечества</h2>
+  </div>
+  <div class="pantheon__grid">
+    <article class="legend">
+      <div class="legend__rank">№1</div>
+      <h3>Galo de Barcelos</h3>
+      <p>Португальский петух из легенды о невиновном пилигриме. Спас человека от виселицы, прокричав с обеденного блюда. Национальный символ.</p>
+    </article>
+    <article class="legend">
+      <div class="legend__rank">№2</div>
+      <h3>Шантеклер</h3>
+      <p>Главный герой средневекового «Романа о Лисе» и пьесы Ростана. Поэт, проповедник, певец зари. Считал, что солнце встаёт от его крика.</p>
+    </article>
+    <article class="legend">
+      <div class="legend__rank">№3</div>
+      <h3>Foghorn Leghorn</h3>
+      <p>Громогласный мультяшный леггорн из Looney Tunes (1946). «I say, I say, son!» — стандарт самцовости в южноамериканском исполнении.</p>
+    </article>
+    <article class="legend">
+      <div class="legend__rank">№4</div>
+      <h3>Mike the Headless</h3>
+      <p>Колорадский петух прожил 18 месяцев без головы (1945–47). Хозяин кормил его пипеткой. Феномен изучали в университете Юты.</p>
+    </article>
+    <article class="legend">
+      <div class="legend__rank">№5</div>
+      <h3>Петя-петушок</h3>
+      <p>Русская народная классика. Лиса, голос золотой, окно теремка. Архетип всех русских петухов разом: красавец, но доверчивый.</p>
+    </article>
+    <article class="legend">
+      <div class="legend__rank">№6</div>
+      <h3>Le Coq Sportif</h3>
+      <p>Не петух, а лого — но именно французский галльский петух носит трико на каждом олимпийце Франции с 1882 года. Спортсмен поневоле.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ░░░░░░░░░░ FOOTER ░░░░░░░░░░ -->
+<footer class="foot">
+  <div class="foot__inner">
+    <div class="foot__brand">
+      <span class="foot__mark">🐓</span>
+      <span>Петухъ.ру — первый голос земли</span>
+    </div>
+    <p class="foot__hint">
+      Пасхалка: введи на клавиатуре <kbd>↑</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd><kbd>←</kbd><kbd>→</kbd><kbd>B</kbd><kbd>A</kbd>
+    </p>
+    <p class="foot__meta">
+      Сделано на скиллах <code>.kiro/skills/</code> · 2026 · Без петухов сайт не идёт.
+    </p>
+  </div>
+</footer>
+
+<!-- ░░░░░░░░░░ KONAMI RAIN STAGE ░░░░░░░░░░ -->
+<div class="rain" id="rainStage" aria-hidden="true"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
